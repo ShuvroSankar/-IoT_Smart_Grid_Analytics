@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  data_pipeline:
+    build: ./app
+    container_name: iot_data_pipeline
+    restart: always
+    volumes:
+      - ./app:/app
+      - ./gcp_credentials.json:/app/gcp_credentials.json
+    env_file:
+      - .env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
