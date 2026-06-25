@@ -1,4 +1,4 @@
-# ⚡ Enterprise Industrial IoT & Energy Analytics Platform
+# Enterprise Industrial IoT & Energy Analytics Platform
 
 <div align="center">
 
@@ -17,7 +17,7 @@
 
 ---
 
-## 🎯 Project Summary
+## Project Summary
 
 This system simulates a high-scale manufacturing facility cluster, ingesting and structuring multi-variable sensor telemetry to **optimize resource schedules, mitigate equipment risks, and minimize utility financial waste**. It showcases a full end-to-end data engineering pipeline — from raw IoT sensor simulation all the way to an executive-facing live BI dashboard — deployed entirely on free-tier cloud infrastructure.
 
@@ -25,7 +25,7 @@ This system simulates a high-scale manufacturing facility cluster, ingesting and
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -59,7 +59,7 @@ This system simulates a high-scale manufacturing facility cluster, ingesting and
 
 ---
 
-## 🚀 Key Engineering Highlights
+## Key Engineering Highlights
 
 ### 1. Resilient Micro-Batch Ingestion Architecture
 Engineered a containerized Python ingestion daemon in Docker that securely aggregates raw telemetry and **bypasses BigQuery Sandbox streaming restrictions** entirely by using the Cloud Storage Load Job API — uploading Parquet dataframes at zero streaming cost.
@@ -87,7 +87,7 @@ Deployed a live Looker Studio dashboard featuring:
 
 ---
 
-## 📊 Cloud Data Warehouse Schema
+## Cloud Data Warehouse Schema
 
 ### Fact Table — `fact_energy_consumption`
 | Column | Type | Description |
@@ -117,7 +117,7 @@ Enables fast time-intelligence sorting across year, quarter, month, week number,
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -131,7 +131,7 @@ Enables fast time-intelligence sorting across year, quarter, month, week number,
 
 ---
 
-## 🏃 Quickstart
+## Quickstart
 
 ### Prerequisites
 - Docker & Docker Compose installed
@@ -153,7 +153,7 @@ PYTHONUNBUFFERED=1
 ```
 Place your GCP Service Account JSON key in the root directory and name it `gcp_credentials.json`.
 
-> ⚠️ **Never commit** `gcp_credentials.json` or `.env` to version control. Both are listed in `.gitignore`.
+> **Never commit** `gcp_credentials.json` or `.env` to version control. Both are listed in `.gitignore`.
 
 ### 3. Build & Launch the Ingestion Gateway
 ```bash
@@ -174,7 +174,7 @@ Once ingestion completes, your BigQuery tables are populated and the [live Looke
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 -IoT_Smart_Grid_Analytics/
@@ -199,7 +199,7 @@ Once ingestion completes, your BigQuery tables are populated and the [live Looke
 
 ---
 
-## 📈 Results & Impact
+## Results & Impact
 
 | Metric | Value |
 |---|---|
@@ -212,17 +212,17 @@ Once ingestion completes, your BigQuery tables are populated and the [live Looke
 
 ---
 
-## 🔗 Links
+## Links
 
 | Resource | URL |
 |---|---|
-| 📊 Live Dashboard | [Looker Studio Report](https://datastudio.google.com/reporting/292b667c-04df-4a54-9f23-e98458c343a7) |
-| 📝 Development Notes | [Notion Page](https://app.notion.com/p/IoT-Smart-Grid-Analytics-384ef3c0ef9080429611fe76055c2b32) |
-| 💻 Source Code | [GitHub Repository](https://github.com/ShuvroSankar/-IoT_Smart_Grid_Analytics) |
+| Live Dashboard | [Looker Studio Report](https://datastudio.google.com/reporting/292b667c-04df-4a54-9f23-e98458c343a7) |
+| Development Notes | [Notion Page](https://app.notion.com/p/IoT-Smart-Grid-Analytics-384ef3c0ef9080429611fe76055c2b32) |
+| Source Code | [GitHub Repository](https://github.com/ShuvroSankar/-IoT_Smart_Grid_Analytics) |
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
