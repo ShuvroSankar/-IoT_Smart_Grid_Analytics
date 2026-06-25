@@ -185,7 +185,7 @@ Once ingestion completes, your BigQuery tables are populated and the [live Looke
 ├── requirements.txt            # Python dependencies
 │
 ├── app/
-│   ├── ingest.py               # Micro-batch ingestion gateway
+│   ├── pipeline.py             # Micro-batch ingestion gateway
 │   └── ml_engine.py            # Synthetic data enrichment engine
 │
 ├── schema/
