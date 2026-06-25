@@ -3,3 +3,4 @@ gcp_credentials.json
 __pycache__/
 .pytest_cache/
 
+.DS_Store
